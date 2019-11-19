@@ -1,6 +1,8 @@
 # Add your code here
 
 # Add your code here
+
+# Add your code here
 def help
   puts /I accept the following commands:/
   puts /- help : displays this help message/
@@ -57,12 +59,11 @@ def play(songs)
   puts /Please enter a song name or number:/
   input = gets.chomp
   if songs.find{|song| song == input}
-      puts "Playing"
-      puts  input
+      puts "Playing #{input}"
   else
     songs.each_with_index do |song, index|
       if input == index + 1
-        puts "Playing #{song}"
+        puts "Playing #{input}"
       end
     end
   end
