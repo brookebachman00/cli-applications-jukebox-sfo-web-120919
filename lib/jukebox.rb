@@ -66,11 +66,11 @@ def play(songs)
         puts "Playing #{song}"
       end
     end
-  else 
+  else
       return /Invalid input, please try again/
   end
   #
-  
+
 end
 
 def exit_jukebox
