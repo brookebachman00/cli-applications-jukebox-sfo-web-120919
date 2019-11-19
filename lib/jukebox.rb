@@ -60,7 +60,7 @@ def play(songs)
   input = gets.chomp
   if songs.find{|song| song == input}
       puts "Playing #{input}"
-  elsif input.to_i >= 1 && <= songs.length
+  elsif input.to_i >= 1 && input.to_i <= songs.length
     songs.each_with_index do |song, index|
       if input.to_i == index + 1
         puts "Playing #{song}"
