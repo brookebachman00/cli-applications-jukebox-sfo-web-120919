@@ -62,7 +62,7 @@ def play(songs)
       puts "Playing #{input}"
   elsif input.to_i >= 1 && <= 10
     songs.each_with_index do |song, index|
-      if input.to_i == index + 1 
+      if input.to_i == index + 1
         puts "Playing #{song}"
       end
     end
